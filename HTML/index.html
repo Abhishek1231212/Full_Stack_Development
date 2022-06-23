@@ -5,22 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+   <link rel="stylesheet" type="text/css" href="../CSS/index.css" />
+
 </head>
 <body>
     <header>
-        <h3>Abhishek Bichala</h3>
-        <div class="Login">
+        <h1 style="font-style: italic; float: left">Abhishek Bichala</h1>
+        <div class="Login boxModelCSS displayCSS">
             <form action="#">
-                <input type="text" placeholder="Username"><br />
-                <input type="password" placeholder="Password"><br />
-                <br />
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
                 <label for="admin">
-                <input type="radio" value="Admin" name="Role" id="admin">Admin<br />
+                <input type="radio" value="Admin" name="Role" id="admin">Admin
                 </label>
                 <label for="user">
-                <input type="radio" value="User" name="Role" id="user">User<br />
+                <input type="radio" value="User" name="Role" id="user">User
                 </label>
-                <br />
                 <label for="city">
                     <select name="location" id="city">
                         <option value="Hyderabad">Hyderabad</option>
@@ -28,8 +28,7 @@
                         <option value="Banglore">Banglore</option>
                     </select>
                 </label>
-                <br /><br />
-                <input type="submit" name="Submit" value="Login/Signup">
+                <input type="submit" name="Submit" value="Login">
             </form>
         </div>
     </header>
@@ -37,12 +36,14 @@
     <main>
         <img src="/Abhishek.jpg" alt="Abhishek" width=100px/>
         <!-- We can have different sections as we see below there are four sections, ther are Education, Experience, Projects and Learning -->
+        <div class="backgroundCSS fontCSS">
         <section><h3>Education:</h3></section>
         <section><h3>Experience:</h3></section>
         <section><h3>Projects:</h3></section>
+        </div>
         <section> 
         <h3>Learning:</h3>
-   <div> <a href="https://www.crampete.com/blogs/road-map-to-full-stack-web-development/" target="_main"><img src="https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg" alt="Full Stack Development" height="100" /> </a>
+   <div class="Content borderCSS"> <a href="https://www.crampete.com/blogs/road-map-to-full-stack-web-development/" target="_main"><img src="https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg" alt="Full Stack Development" height="100" /> </a>
     <br />
     <a href="/education.html" target="_blank">Education</a><br />
     <a href="/experience.html" target="_blank">Experience</a><br />
@@ -54,8 +55,8 @@
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
-    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <i>specimen book</i>. It has survived not only five centuries, but also the leap into <u>electronic typesetting</u>, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <a href="https://google.com">Google</a>
+    <p class="textCSS overflowCSS"><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type <i>specimen book</i>. It has survived not only five centuries, but also the leap into <u>electronic typesetting</u>, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <a class="Google" href="https://google.com" target="_blank">Google</a>
     <br />
     <a href="/sample.html">Sample</a>
     <br />
@@ -143,6 +144,16 @@
     <section>
         <video width="560" height="315" src="/Sample.mp4" controls></video>
     </section>
+
+    <section>
+        <div class="head positioningCSS">
+            <div id="student1">Student 1</div>
+            <div id="student2">Student 2</div>
+            <div id="student3">Student 3</div>
+            <div id="student4">Student 4</div>
+        </div>
+    </section>
+
     </main>
     <hr />
     <footer>
