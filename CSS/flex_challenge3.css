@@ -1,0 +1,9 @@
+.container{
+    display: flex;
+    flex-flow: row wrap;
+}
+.navbar{
+    width: 30%;
+    background-color: azure;
+    flex-direction: column;
+}

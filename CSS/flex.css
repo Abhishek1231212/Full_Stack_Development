@@ -1,0 +1,77 @@
+@media (max-width: 5px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+
+.flex-container{
+    background-color: azure; 
+    display: flex;
+    /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse; */
+    flex-flow: row wrap; /*flex-flow will set both flex-direction and flex-wrap*/
+    justify-content: center;
+    /* justify-content: flex-end;
+    justify-content: flex-start; */
+    /* justify-content: space-around;
+    justify-content: space-between; */
+    align-items: center;
+    /* align-items: flex-start;
+    align-items: flex-end;
+    align-items: stretch;
+    align-items: baseline; */
+    /* align-content: center;
+    align-content: space-between;
+    align-content: space-around;
+    align-content: stretch;
+    align-content: flex-start;
+    align-content: flex-end; */
+}
+
+.flex-item{
+    height:30px;
+    width:30px;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    
+}
+
+#flex-item1{
+    background-color: blue;
+    order: 2;
+    height: 10px;
+    align-self: flex-start;
+}
+
+#flex-item2{
+    background-color: green;
+    height: 10px;
+    order: 3;
+    flex-shrink: 10;
+    flex-basis: 20px;
+    align-self: center;
+}
+#flex-item3{
+    background-color: pink;
+    order: 4;
+    height: 10px;
+    align-self: flex-end;
+}
+#flex-item4{
+    background-color: chocolate;
+    order: 5;
+    flex-grow: 5;
+}
+#flex-item5{
+    background-color: purple;
+    order: 1;
+}
